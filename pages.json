@@ -1,0 +1,74 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "学啥咋学",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+
+			}
+		}, 
+		{
+			"path": "pages/start/start",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		}, {
+			"path": "pages/master/master",
+			"style": {
+				"navigationBarTitleText": "专家详情"
+			}
+		}, {
+			"path": "pages/bindPhone/bindPhone",
+			"style": {
+				"navigationBarTitleText": "绑定手机号"
+			}
+		}
+	    ,{
+            "path" : "pages/serviceRules/serviceRules",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/privacyPolicy/privacyPolicy",
+            "style" : {}
+        }
+    ],
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#333333",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "问专家",
+				"iconPath": "static/images/icon__msg_default.png",
+				"selectedIconPath": "static/images/icon_msg_sel@3x.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/images/icon_me_def@3x.png",
+				"selectedIconPath": "static/images/icon_me_sel@3x.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "#FEBA52",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FEBA52",
+		"backgroundColor": "#FEBA52"
+	}
+}
